@@ -1,0 +1,78 @@
+/* Обнуление */
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;widows: 100%;font-size: 100%;line-height: 1;font-size: 14px;
+-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a::hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+/*----------------------------------------*/
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    min-height: 30vh;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 28px;
+    color: #2c4c54;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #041c24;
+}
+
+.box input {
+    height: 55px;
+    width: 400px;
+    border: 2px solid #041c24;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+input::placeholder {
+    font-size: 26px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-container button {
+    font-size: 24px;
+    width: 160px;
+    height: 50px;
+    background-color: #9e3cc9;
+    color: whitesmoke;
+    border-radius: 7px;
+    margin: 0 10px;
+}
